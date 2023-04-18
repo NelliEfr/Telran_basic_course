@@ -1,0 +1,30 @@
+/* 
+selector {
+    styleName: value;
+}
+*/
+
+img {
+    width: 400px; /* ширина */
+    height: 300px; /* высота */
+}
+
+a {
+    margin: 100px; /* внешние отступы */
+    color: orange; /* цвет текста */
+    border: 1px solid red; /* рамки */
+}
+
+pre {
+    color: fuchsia;
+}
+
+img {
+    margin: 50px
+}
+
+p {
+    margin: 100px;
+    color: green;
+    border: 1px solid red;
+}
