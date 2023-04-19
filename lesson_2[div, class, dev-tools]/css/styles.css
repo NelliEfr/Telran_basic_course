@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    /* border: 1px solid red; */
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+}
+
+p {
+    /* top right bottom left */
+    /* padding: 20px 20px 20px 20px; */
+    /* top right bottom left */ 
+    /* margin: 20px 20px 20px 20px; */
+    
+    /* top (right, left) bottom */
+    /* padding: 20px 15px 10px; */
+    /* top (right, left) bottom */
+    /* margin: 20px 15px 10px;   */
+
+    /* (top, bottom) (right, left) */
+    /* padding: 20px 10px; */
+    /* (top, bottom) (right, left) */
+    /* margin: 20px 10px; */
+
+    /* (top, bottom, right, left) */
+    /* padding: 20px; */
+    /* (top, bottom, right, left) */
+    /* margin: 20px; */
+
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px; */
+
+    /* margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px; */
+
+    /* padding: 10px 20px 5px 7px;
+    margin: 5px 4px 11px 3px; */
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+   text-align: center;
+}
+
+/*
+При использовании класса как селектор обязательно ставим точку перед названием класса 
+.className
+*/
+
+.post-box {
+    border: 2px solid gray;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/*
+указываем на все h2, которые находятся внутри элементов с классом post-box
+*/
+
+.post-box h2 {
+    text-align: center;
+}
+
+.post-box .green-p  {
+    color: green;
+}
+
+.post-box img {
+    width: 700px;
+}
+
+.social-links a img {
+    width: 48px;
+    height: 48px;
+}
