@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+html {
+    font-size: 18px;
+}
+
+p {
+    border: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.paragraph_1 {
+    width: 750px;
+}
+
+.paragraph_2 {
+    width: 50%;
+}
+
+/*
+    font-size: 16px;
+*/
+
+.paragraph_3 {
+    width: 5em;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+body>ul {
+    font-size: 20px;
+}
+
+/*
+    rem(root-em) = root element => html
+*/
+li {
+    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
+}
+
+div {
+    border: 1px solid black;
+    margin: 10px 0;
+    height: 50px;
+}
+
+/*
+    vw = viewpoint width 
+    vh = viewpoint height
+
+    width > heigth
+    vmin = heigth
+    vmax = width
+
+    width < heigth
+    vmin = width
+    vmax = heigth
+*/
+.block_1 {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    width: 10vmin;
+    height: 10vmax;
+}
+
+.block_2 {
+    width: 50%;
+}
+
+.block_3 {
+    width: 100%;
+}
+
+.box {
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+}
+/*
+    Создать блок шириной 50% и высотой 400px 
+    Добавить внутренние отступы слева и справа (5%) а внешними (20%) и отступами сверху и снизу (внутренние 30px а внешние 40px). 
+    Добавьте черную рамку в 5px и добавьте border-box и посмотреть разницу 
+*/
+.block {
+    /* width: 50%; */
+    max-width: 1280px;
+    min-width: 400px;
+    /* max-width: 1280px;
+    min-width: 400px; */
+    height: 400px;
+    padding: 30px 5%;
+    /* margin: 40px 20%; */
+    margin: 40px auto;
+    border: 5px solid black;
+
+    /* background-color: red; */
+    /*
+        r = red
+        g = green
+        b = blue
+        a = alfa
+        [0, 255]
+    */
+    /* background-color: rgb(0, 255, 0, 0.1); */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /*
+        HEX 
+    */
+    background-color: #74bb17;
+    /*
+        red = 74
+        green = bb
+        blue = 17 
+    */
+    /* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F */
+}
+
+.img_block {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.img_block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 
+    Задание выполняется пошагово вместе с преподавателем:
+    Создать 3 div (разделы страницы)
+    Все блоки сделать шириной 80% и максимальной шириной 1200 и высотой минимум 400 px. Выровнять по центру (margin: 0 auto). 
+    Добавить внутренний отступ 20px с всех сторон и внешний только вертикальный 20px
+    В первый блок добавить текст 
+    Во второй блок добавить картинки с единым размером (200px на 300px) и отступом 20px.
+    В третьем блоке добавить ссылки на 4 магазина (любых). Ссылки должны быть в виде кликабельных картинок
+*/
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container>img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container a img {
+    width: 30px;
+    height: 30px;
+}
