@@ -97,3 +97,7 @@ td, th {
 .second-table tr:nth-child(4n - 3) {
     background-color: yellow;
 }
+
+.table-3 tr td {
+    text-align: center;
+}
