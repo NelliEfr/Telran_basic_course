@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inline {
+    text-align: center;
+    font-size: 0;
+}
+
+.block {
+    margin-bottom: 15px;
+}
+
+.block p {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.inline p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.block p:first-child {
+    color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.block p:nth-child(2) {
+    color: blue;
+    width: 100px;
+    height: 70px;
+}
+
+.block p:nth-child(3) {
+    color: fuchsia;
+    width: 60px;
+    height: 100px;
+}
+
+.block p:nth-child(4) {
+    color: cyan;
+    width: 60px;
+    height: 60px;
+}
+
+.block p:last-child {
+    color: green;
+    width: 100px;
+    height: 60px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.flex div {
+    margin-bottom: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+}
+
+.flex .space-between {
+    justify-content: space-between;
+}
+
+.flex .space-around {
+    justify-content: space-around;
+}
+
+.flex .space-evenly {
+    justify-content: space-evenly;
+}
+
+.align-items {
+    border: 1px solid black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block.align-items p {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
