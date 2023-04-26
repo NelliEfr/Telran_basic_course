@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- 
+        https://tel-ran.de/?city=berlin&course=frontend
+        city = berlin
+        course = frontend
+
+        http://127.0.0.1:5500/lesson_7/?firstname=John&lastname=Dow&profession=manager
+        firstname = John
+        lastname = Dow
+        remember=on
+     -->
+    <form method="get">
+        <label for="firstname-input">Firstname</label>
+        <input type="text" placeholder="Write your firstname" name="firstname" id="firstname-input">
+
+        <label for="lastname-input">Lastname</label>
+        <input type="text" placeholder="Write your lastname"  name="lastname" id="lastname-input">
+
+        <textarea placeholder="Description..." name="description" cols="30" rows="10"></textarea>
+
+        <select name="profession">
+            <option selected disabled>Select your profession</option>
+            <option value="developer">Developer</option>
+            <option value="manager">Manager</option>
+            <option value="designer">Designer</option>
+        </select>
+
+        <label for="remember">
+            <input type="checkbox" name="remember" id="remember">
+            Remember me
+        </label>
+
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+        </div>
+        <button>Click me!</button>
+    </form>
+</body>
+
+</html>
