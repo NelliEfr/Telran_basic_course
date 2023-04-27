@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="main">
-        <div>
-            <form action="" id="message-form">
+        <div id="footer-contacts">
+            <div class="footer-tittle">
+                <h2>Связь с нами</h2>
+            </div>
+            <div class="footer-text">
+                <p>У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+            </div>
+            <div class="contacts">
+                <div>
+                    <img src="./media/phone.png" alt="phone">
+                    <p>+7 (111) 222-33-44</p>
+                </div>
+                <div>
+                    <img src="./media/mail.png" alt="mail">
+                    <p>order@bu-one.ru</p>
+                </div>
+            </div>
+        </div>
+        <div id="form-container">
+            <form method="post" id="message-form">
                 <div class="user-data">
                     <div>
                         <label for="firstname">Имя</label>
-                        <input type="text" placeholder="Иван"
+                        <input type="text" name="firstname" placeholder="Иван"
                         id="firstname">
                     </div>
                     <div>
                         <label for="lastname">Фамилия</label>
-                        <input type="text" placeholder="Иванов "
+                        <input type="text" name="lastname" placeholder="Иванов "
                         id="lastname">
                     </div>
                 </div>
-                <div>
+                <div class="message-input">
                     <label for="message">Сообщение</label>
-                    <textarea placeholder="Ваше сообщение" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" placeholder="Ваше сообщение" id="message"></textarea>
                 </div>  
-                <div>
+                <div class="button-box">
                     <button>Отправить сообщение</button>
                 </div>
             </form>

@@ -12,17 +12,130 @@
     background-image: url("../media/footer.png");
 }
 
+.main #form-container {
+    width: 50%;
+}
+
 .main #message-form {
     display: flex;
     flex-direction: column;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 30px 0px;
+    width: 540px;
+    padding-left: 50px;
 }
 
 .main #message-form .user-data {
     display: flex;
+    margin-bottom: 35px;
 }
 
 .main #message-form .user-data div {
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.main #message-form .user-data div:first-child {
+    margin-right: 30px;
+}
+
+.main #message-form .message-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.main #message-form .button-box {
+    /* text-align: end; */
+    display: flex;
+    justify-content: end;
+}
+
+.main #message-form .button-box button {
+    background: #005FA3;
+    border: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding: 19px 18px;
+}
+
+.main #message-form .message-input textarea {
+    height: 100px;
+    resize: none;
+    width: 100%;
+}
+
+.main #message-form .message-input label {
+    margin-bottom: 15px;
+}
+
+.main #message-form .message-input textarea,
+.main #message-form .user-data div input {
+    background-color: transparent;
+    border: none;
     color: white;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.main #message-form .message-input textarea:focus,
+.main #message-form .user-data div input:focus {
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.main #message-form .user-data div input {
+    padding-bottom: 15px;
+}
+
+.main #message-form .user-data div input::placeholder,
+.main #message-form .message-input textarea::placeholder {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+.main #message-form .user-data div label {
+    margin-bottom: 15px;
+}
+
+.main #footer-contacts {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    width: 50%;
+    padding-left: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.main #footer-contacts .footer-tittle {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 60px;
+    font-size: 48px;
+}
+
+.main #footer-contacts .footer-text {
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+
+.main #footer-contacts .contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main #footer-contacts .contacts div {
+    display: flex;
+    align-items: center;
+}
+
+.main #footer-contacts .contacts div:first-child {
+    margin-right: 40px;
+}
+
+.main #footer-contacts .contacts img {
+    margin-right: 16px;
 }
