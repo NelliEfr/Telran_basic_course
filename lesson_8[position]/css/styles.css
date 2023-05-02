@@ -5,7 +5,7 @@
 }
 
 body {
-    padding: 50px;
+    padding: 0 50px;
 }
 
 .container {
@@ -34,12 +34,14 @@ body {
     margin: auto;
 }
 
+/* Переделать результат выполнения прошлого задания таким образом, чтобы блоки частично пересекались и поменять их порядок отображения через z-index. */
+
 .container:nth-child(2) .inner:first-child {
     top: 50px;
     left: 50px;
     z-index: 40;
 }
-
+/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nemo voluptatibus voluptas nam sint nisi velit, amet sunt aut unde libero, molestias iste facilis autem nihil, beatae eius! Tenetur, reprehenderit. */
 .container:nth-child(2) .inner:nth-child(2) {
     top: 75px;
     left: 75px;
@@ -56,6 +58,9 @@ body {
     top: 125px;
     left: 125px;
 }
+
+/* Добавить 4 блока и расположить их по углам экрана родительского блока (верхний левый, верхний правый, нижний левый, нижний правый). */
+
 
 .container:nth-child(3) .inner:first-child {
     top: 10px;
@@ -75,4 +80,67 @@ body {
 .container:nth-child(3) .inner:last-child {
     bottom: 10px;
     right: 10px;
+}
+
+.modal-container {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .modal-content {
+    padding: 40px;
+    width: 50vw;
+    height: 50vh;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    box-shadow: 3px 3px 30px 5px black;
+}
+
+.scroll-top {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+    background-color: rgba(29, 29, 29, 0.7);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+nav {
+    height: 50px;
+    background-color: rgb(255, 92, 92);
+    color: white;
+    width: 100%;
+    font-size: 22px;
+    
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    cursor: pointer;
 }
