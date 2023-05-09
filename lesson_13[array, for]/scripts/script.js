@@ -59,14 +59,14 @@
 // }
 
 // =========== tasks ===========
-// const arr = [1, 4, -2, 5, 3, -5, 8, 16, 11, 23, -12, 4, -32]
+const arr = [1, 4, 2, 5, 3, 5, 8, 7, 11, 23, -12, 11, -32]
 // Написать цикл, который выводит только положительные числа из массива.
 // for(let i = 0; i < arr.length; i++) {
 //     if (arr[i] >= 0) {
 //         console.log(arr[i])
 //     }
 // }
-// console.log("===========");
+
 // Написать цикл, который выводит только четные числа.
 // for(let i = 0; i < arr.length; i++) {
 //     if (arr[i] % 2 === 0) {
@@ -83,3 +83,73 @@
 // for (let i = 15; i >= 0; i--) { // 15 14 13 12 11 10 ... 0 -1
 //     console.log(i)
 // }
+
+// Вывести только те значения массива, индекс которых кратен трем
+// 1.
+// for(let i = 0; i < arr.length; i++) {
+//     if (i % 3 === 0) {
+//         console.log(i, arr[i])
+//     }
+// }
+// 2.
+// for(let i = 0; i < arr.length; i += 3) {
+//     console.log(i, arr[i])
+// }
+
+// Вывести значения массива справа налево с шагом два
+// for(let i = arr.length - 1; i >= 0; i -= 2) {
+//     console.log(arr[i]);
+// }
+
+// Разбор задачи на поиск агрегации по массиву. На примере суммы всех элементов массива.
+// let sum = 0 // 1, 5 ...
+// for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i]
+// }
+// console.log(sum)
+
+// Найти сумму положительных чисел.
+// let sum1 = 0
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//         sum1 = sum1 + arr[i]
+//     }
+// }
+// console.log("Сумма положительных чисел", sum1)
+
+// Найти сумму чисел, чей индекс равен значению элемента.
+// let sum2 = 0
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === i) {
+//         sum2 = sum2 + arr[i]
+//     }
+// }
+// console.log("Сумма чисел, чей индекс равен значению элемента", sum2)
+
+// Найти сумму четных чисел и вывести в консоль.
+// let sum3 = 0
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         sum3 = sum3 + arr[i]
+//     }
+// }
+// console.log("Сумма четных чисел", sum3)
+
+// Найти сумму четных и нечетных чисел из массива и вывести разницу между ними. Вычесть из большего меньшее.
+// let sumOdds = 0
+// let sumEvens = 0
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         sumEvens += arr[i]
+//     } else {
+//         sumOdds += arr[i]
+//     }
+// }
+
+// let diff = 0
+// if(sumOdds > sumEvens) {
+//     diff = sumOdds - sumEvens
+// } else {
+//     diff = sumEvens - sumOdds
+// }
+// console.log("Разница между сумм четных и нечетных чисел", diff);
