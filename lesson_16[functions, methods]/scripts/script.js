@@ -106,3 +106,63 @@
 // console.log(createArr(15));
 // console.log(createArr(10));
 // console.log(createArr(5));
+
+// ============== function expression/declaration ==============
+// ======== function declaration ========
+// power(2, 3)
+// function power(a, b = 2) {
+//     console.log(a**b)
+// }
+
+// ======== function expression ========
+// power1(4, 3) // error
+// const power1 = function(a, b = 2) {
+//     console.log(a**b)
+// }
+// power1(4, 3)
+
+// const user = {
+//     firstname: 'John',
+//     lastName: 'Dow',
+//     greet: function(name) {
+//         console.log(`Hello, ${name}!`)
+//     },
+//     print: console.log
+// }
+// user.greet("John")
+// user.print("Hello world")
+// const echo = console.log
+// echo(user)
+
+// ======== var, hoisting ========
+
+// let greet = "Hello world"
+// function hi() {
+//     let hey = "Hello"
+//     console.log(hey)
+//     console.log(greet)
+// }
+// hi()
+// console.log(hey) // error
+
+// if (true) {
+//     var hello = "hello"
+//     let hello1 = "hello1"
+// }
+// console.log(hello) // "hello"
+// console.log(hello1) // error
+
+// hoisting
+// function hi() {
+//     // var hey = undefined
+//     console.log(hey) // undefined
+//     var hey = "Hello"
+//     console.log(hey) // "Hello"
+// }
+// hi()
+
+// var num = 0
+// var num = 1
+// var num = 2
+// var num = 3
+// console.log(num) // 3
