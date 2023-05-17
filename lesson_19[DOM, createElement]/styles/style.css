@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+    width: 350px;
+    object-fit: cover;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    display: flex;
+}
+
+.products div {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 7px;
+}
