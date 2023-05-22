@@ -1,0 +1,16 @@
+#thumbnails {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#thumbnails img {
+    width: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#preview img {
+    width: 1200px;
+    object-fit: cover;
+}
