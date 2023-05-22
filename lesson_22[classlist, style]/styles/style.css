@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.number-cards, .words-cards {
+    display: flex;
+}
+
+.number-cards .card, .words-cards .card {
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+    color: brown;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.words-cards .hidden {
+    display: none;
+}
+
+.number-cards .active {
+    color: bisque;
+    background-color: brown;
+}
