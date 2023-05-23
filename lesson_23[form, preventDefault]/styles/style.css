@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+.product-form-container {
+    background-color: #34495E;
+    padding: 78px 150px;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 20px;
+}
+
+#product-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#product-form > input {
+    padding: 10px 35px;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 25px;
+}
+
+#product-form > input::placeholder {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+#product-form > button {
+    height: 50px;
+    margin-top: 122px;
+    cursor: pointer;
+    background-color: #27AE60;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    border: none;
+}
+
+#product-form > input:first-child {
+    margin-bottom: 36px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 70px;
+}
+
+.products-container > .product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: #34495E;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.products-container > .product-item:not(:last-child) {
+    margin-bottom: 30px;
+}
