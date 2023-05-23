@@ -93,3 +93,39 @@
 //         cardsObjects[i].pEnElem.classList.remove("hidden")
 //     }
 // })
+
+// const pElem = document.querySelector(".ex-text")
+// pElem.style.color = "red"
+// pElem.style.fontSize = "24px"
+
+// const newPElem = document.createElement("p")
+// newPElem.style.color = "green"
+// newPElem.style.fontSize = "12px"
+// newPElem.innerText = "Hello world"
+// newPElem.style.border = "1px solid blue"
+// document.body.append(newPElem)
+
+// Создать квадратный div и при наведении курсора на него цвет div-а рандомно менять
+// const newDivElem = document.createElement("div")
+// newDivElem.style.width = "300px"
+// newDivElem.style.height = "300px"
+// newDivElem.style.backgroundColor = "rgb(0, 0, 0)" // [0, 255]
+// document.body.append(newDivElem)
+// Math.random() // [0, 1)
+// newDivElem.addEventListener("mouseover", function() {
+//     const red = Math.floor(Math.random() * 255)
+//     const green = Math.floor(Math.random() * 255)
+//     const blue = Math.floor(Math.random() * 255)
+//     const rgbStr = `rgb(${red}, ${green}, ${blue})`
+//     newDivElem.style.backgroundColor = rgbStr
+// })
+
+// Написать цикл, который создает множество div-ов c цветами от rgb(128, 128, 0) до rgb(128, 128, 255). У дивов цвет должен меняться с шагом 5.
+// 100 * 100
+// for (let blue = 0; blue <= 255; blue += 5) {
+//     const newDivElem = document.createElement("div")
+//     newDivElem.style.width = "150px"
+//     newDivElem.style.height = "150px" 
+//     newDivElem.style.backgroundColor = `rgb(128, 128, ${blue})`
+//     document.body.append(newDivElem)
+// }
