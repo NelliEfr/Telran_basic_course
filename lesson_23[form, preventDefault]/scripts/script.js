@@ -37,12 +37,18 @@ function createProductNode(name, price) {
 }
 
 // Разработать функцию rerender. Эта функция очищает контейнер с карточками и создает множество карточек с товарами из массива. Настроить rerender при добавлении нового продукта.
-
+// Доработать rerender таким образом, чтобы при двойном клике по карточке в консоль выводилось название товар.
+// Доработать rerender таким образом, чтобы при двойном клике по карточке из массива удалялся товар по индексу и вызывался rerender.
+// splice
 function rerender() {
     productsContainer.innerHTML = ""
     for (let i = 0; i < products.length; i++) {
         const {name, price} = products[i]
         const productCard = createProductNode(name, price)
+        productCard.addEventListener("dblclick", function() {
+            products.splice(i, 1)
+            rerender()
+        })
         productsContainer.append(productCard)
     }
 }
